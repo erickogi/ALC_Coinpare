@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4285f4</color>
+    <color name="colorPrimaryDark">#3367d6</color>
+    <color name="colorAccent">#FFC400</color>
+
+    <color name="black">#000000</color>
+    <color name="activity_background">#EEEEEE</color>
+
+    <color name="google_blue">#4285F4</color>
+    <color name="google_green">#34A853</color>
+    <color name="google_yellow">#FBBC05</color>
+    <color name="google_red">#EA4335</color>
+
+    <color name="prim">#D6D2D3 </color>
+</resources>
