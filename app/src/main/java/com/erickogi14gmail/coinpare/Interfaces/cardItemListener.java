@@ -8,4 +8,6 @@ import com.ramotion.foldingcell.FoldingCell;
 
 public interface cardItemListener {
     void onFoldingCellClicked(int postion, FoldingCell foldingCell);
+
+    void btnShareClicked(int position);
 }

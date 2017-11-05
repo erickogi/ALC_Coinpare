@@ -2,11 +2,11 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "25.0.3"
+    buildToolsVersion '26.0.2'
     defaultConfig {
-        jackOptions {
-            enabled true
-        }
+
+        android.compileOptions.sourceCompatibility 1.8
+        android.compileOptions.targetCompatibility 1.8
         applicationId "com.erickogi14gmail.coinpare"
         minSdkVersion 18
         targetSdkVersion 26
@@ -35,13 +35,15 @@ dependencies {
     annotationProcessor "android.arch.lifecycle:compiler:1.0.0-alpha8"
 
 
-    compile 'android.arch.lifecycle:extensions:'+ rootProject.archLifecycleVersion;
-    annotationProcessor "android.arch.lifecycle:compiler:"+ rootProject.archLifecycleVersion;
+    compile 'android.arch.lifecycle:extensions:' + rootProject.archLifecycleVersion
+    annotationProcessor "android.arch.lifecycle:compiler:" + rootProject.archLifecycleVersion
 
 
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.android.support:design:26.+'
+    compile 'com.github.jakob-grabner:Circle-Progress-View:v1.3'
+
     compile 'de.hdodenhof:circleimageview:2.1.0'
     compile 'com.android.support:cardview-v7:26.+'
     compile 'com.muddzdev:styleabletoast:1.0.7'
@@ -51,7 +53,10 @@ dependencies {
     compile 'com.ramotion.foldingcell:folding-cell:1.2.1'
     compile 'com.github.midorikocak:currency-picker-android:1.1.9'
     compile 'com.github.mukeshsolanki:country-picker-android:1.1.9'
-   // compile 'android.arch.persistence.room:runtime:' + rootProject.archRoomVersion;
-   // annotationProcessor 'android.arch.persistence.room:compiler:' + rootProject.archRoomVersion;
+
+    compile 'com.wang.avi:library:2.1.3'
+
+    // compile 'android.arch.persistence.room:runtime:' + rootProject.archRoomVersion;
+    // annotationProcessor 'android.arch.persistence.room:compiler:' + rootProject.archRoomVersion;
     testCompile 'junit:junit:4.12'
 }
